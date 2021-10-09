@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="youngee">
+    <meta name="description" content="youngee portfolio">
+    <meta name="keywords" content="portfolio, 웹퍼블리셔, 프론트엔드">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js">
+    <link rel="stylesheet" href="asset/css/slider.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    <!-- progress -->
+    <div class="loading">
+        <div class="load-container">
+            <p class="percent">0</p>
+            <div class="ring ">
+                <span></span>
+            </div>
+        </div>    
+    </div>
+  
+    <!-- // progress -->
+
+    <div class="scroll">0</div>
+
+
+    <div id="scroll">
+       <p>scroll</p> 
+        <svg class="moving-circle" width="110" height="110" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M163 84C163 127.63 127.63 163 84 163C40.3695 163 5 127.63 5 84C5 40.3695 40.3695 5 84 5C127.63 5 163 40.3695 163 84Z" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        </svg>
+    </div>
+    <!-- //scorll -->
+
+    <!-- header -->
+    <header id="header">
+        <nav class="nav">
+            <h1 class="logo"><a href="index.html">young's</a></h1>
+            <ul class="menu">
+                <li class="on"><a href="#section01">main</a></li>
+                <li ><a href="#section02">about</a></li>
+                <li><a href="#section03">project</a></li>
+                <li><a href="#section04">animation</a></li>
+                <li><a href="#section05">javascript</a></li>
+                <li><a href="#section05">react</a></li>
+                <li><a href="#section06">contact</a></li>
+            </ul>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <main id ="contents">   
+          <!-- port-main -->
+        <section id="section01">
+            <h2 class="ir_so">portfolio_main</h2>
+            <div class="main01">
+                <div class="container">
+                    <div class="port-main">
+                        <h3 class="split">young's portfolio</h3>
+                        <span>welcomemysite</span>
+                        <div class="main-visual ir_pm">
+                            <span>main-visual</span>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+        </section>
+        <!-- //port-main -->
+       
+        <!-- about -->
+        <section id="section02">
+            <h2 class="ir_so">about</h2>
+            <div class="container">
+                <div class="about">
+                    <span class="desc-img">
+                        <img src="asset/image/about/about.jpg" srcset="asset/image/about/about@2x.jpg" alt="">
+                    </span>
+                    <div class="desc-txt">
+                        <h3>web frontend</h3>
+                        <em>안녕하세요.  발전하기 위해 노력 하는 성태영입니다.</em>
+                        <p>저는 2년 반개월 동안 웹디자이너로 일하면서 
+                            내가 한 디자인이 좀 더 동적이고 다양한 느낌으로 표현 되면 좋겠다는 
+                            생각을 하게 되고 이 생각이 점점 내가 직접 만들어 보자 라는 목표가 생겼습니다.
+                            다양한 디자인을 그에 맞게 구현하고, 트렌드를 맞춰 발전 하는 
+                            웹퍼블리셔가 될 수 있도록 노력 하겠습니다.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- //about -->
+
+       <!-- project -->
+       <section id="section03">
+           <h2 class="ir_pm">project</h2>
+           <div class="container">
+               <div class="project">
+                    <h3 class="letter-wrap" >my project list</h3>
+                    <ul class="project-item">
+                        <li>
+                            <span class="line"></span>
+                            <div class="desc-img desc-img01">
+                                <span class="ir_so">meagbox</span>
+                                <!-- <img src="asset/image/project/project01.jpg" srcset="asset/image/project/project01@2x.jpg" alt="megabox"> -->
+                            </div>
+                            <div class="desc-txt">
+                                <h4> Megabox</h4>
+                                <a href="http://youngee01.dothome.co.kr/mega/index.html" class="arrow" target="blank">
+                                    <span >responsive.</span>
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                        <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                        <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <p>기본의 메가박스 홈페이지를 반응형으로 리뉴얼 구현 하였습니다. 
+                                    웹접근성을 준수하여 제작 하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="line"></span>
+                            <span class="desc-img desc-img02 ">
+                                <span class="ir_so">meagbox</span>
+                                <!-- <img src="asset/image/project/project02.jpg" srcset="asset/image/project/project02@2x.jpg" alt="wesponsive site"> -->
+                            </span>
+                            <div class="desc-txt">
+                                <h4>responsive site</h4>
+                                <a href="http://youngee01.dothome.co.kr/responsive/html5/index.html" class="arrow">
+                                    <span >responsive.</span>
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                        <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                        <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <p>반응형 사이트 레이아웃 을 html 시멘틱 태그를 사용하여 
+                                    제작하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="line"></span>
+                            <span class="desc-img desc-img03 ">
+                                <span class="ir_so">meagbox</span>
+                                <!-- <img src="asset/image/project/project03.jpg" srcset="asset/image/project/project03@2x.jpg" alt="wesponsive standards"> -->
+                            </span>
+                            <div class="desc-txt">
+                                <h4>web standards</h4>
+                                <a href="http://youngee01.dothome.co.kr/web/index.html#" class="arrow">
+                                    <span >web standards.</span>
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                        <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                        <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <p>웹접근 성위해 마크업과 CSS 표준 검사를 통해 웹표준 을 준수하여 제작하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                    </ul>
+                   
+               </div>
+           </div>
+       </section>
+        <!-- //project -->
+        
+        <!-- animation -->
+        <section id="section04">
+            <h2 class="ir_so">animation</h2>
+            <div class="container">
+                <div class="animation">
+                    <div class="animation-wrap">
+                        <div class="item">
+                            <h3 class="letter-wrap" >Animation css</h3>
+                        </div>
+                        <div class="item item01">
+                            <div class="desc-ani">
+                                <div class="wrap">
+                                    <div class="container">
+                                        <div class="color">
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="color">
+                                            <div class="orange"></div>
+                                        </div>
+                                        <div class="color">
+                                            <div class="green"></div>
+                                        </div>
+                                        <div class="color">
+                                            <div class="blue"></div>
+                                        </div>
+                                        <div class="color">
+                                            <div class="purple"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                   
+                            </div>
+                            <div class="desc-txt">
+                                    <h4>animation css 01</h4>
+                                    <a href="#" class="arrow">
+                                        <span >loding bar</span>
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                            <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                            <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                    <p>여러개의 로딩바를 시간차를 두고 차례대로 나오는 에니메이션을 제작 하였습니다.
+                                     </p>
+                                </div>
+                        </div>
+                        <div class="item item02">
+                            <div class="desc-ani">
+
+                                <div class="wrap_box">
+                                    <div class="container">
+                                        <div class="ball ball_planet"></div>
+                                       
+                                        <div class="wrap wrap01">
+                                            <div class="ball ball01"></div>
+                                        </div>
+                            
+                                        <div class="wrap wrap02">
+                                            <div class="ball ball02"></div>
+                                        </div>
+                            
+                                        <div class="wrap wrap03">
+                                            <div class="ball ball03"></div>
+                                        </div>
+                            
+                                        <div class="wrap wrap04">
+                                            <div class="ball ball04"></div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="desc-txt">
+                                    <h4>animation css 02</h4>
+                                    <a href="#" class="arrow">
+                                        <span >rounding</span>
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                            <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                            <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                    <p> 기준점에 원형의 도형을 두고 주위에 작은 원형의 도형들이 돌아가는 애니메이션을 제작 하였습니다.
+                                     </p>
+                                </div>
+                        </div>
+                        <div class="item item03">
+                            <div class="desc-ani">
+                                <div class="wrap">
+                                    <div class="outline">
+                                        <div class="waves"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desc-txt">
+                                    <h4>animation css 03</h4>
+                                    <a href="#" class="arrow">
+                                        <span >wave</span>
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                            <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                            <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                    </a>
+                                    <p>여러개의 원을 시간차를 두고 웨이브 처럼 보이는 에니메이션을 제작 하였습니다.
+                                     </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- //animation -->
+         
+         <!-- javascript -->
+        <section id="section05">
+            <h2 class="ir_so">javascirpt</h2>
+            <div class="container">
+                <div class="javascript">
+                     <h3 class="letter-wrap">javascript</h3>
+                     <ul class="javascript-item">
+                         <li class="item01">
+                             <div class="desc-js">
+                                      
+                                <div class="wrap">
+
+                                    <div class="clock">
+                                        <div class="clock-face">
+                                        <div class="hand hour-hand"></div>
+                                        <div class="hand min-hand"></div>
+                                        <div class="hand second-hand"></div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                             </div>
+                             <div class="desc-txt">
+                                 <h4>javascript 01</h4>
+                                 <a href="#" class="arrow">
+                                     <span >clock.</span>
+                                 </a>
+                                 <p>자바스크립트를 이용하여 아날로그 적인 시계를 만들었습니다.
+                                  </p>
+                             </div>
+                         </li>
+                         <li class="item02">
+                            <div class="desc-js">
+                                <div class="inbox">
+                                    <div class="item">
+                                      <input type="checkbox">
+                                      <p>This is an inbox layout.</p>
+                                    </div>
+                                    <div class="item">
+                                      <input type="checkbox">
+                                      <p>Check one item</p>
+                                    </div>
+                                    <div class="item">
+                                      <input type="checkbox">
+                                      <p>Hold down your Shift key</p>
+                                    </div>
+                                    <div class="item">
+                                      <input type="checkbox">
+                                      <p>Check a lower item</p>
+                                    </div>
+                                    <div class="item">
+                                      <input type="checkbox">
+                                      <p>Everything in between should also be set to checked</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="desc-txt">
+                                <h4>javascript 02</h4>
+                                <a href="#" class="arrow">
+                                    <span >checkbox list </span>
+                                </a>
+                                <p>리스트의 할일을 완료하면 체크하고 확인 할 수 있는 체크리스트를 제작 하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                        <li class="item03">
+                            <div class="desc-js">
+                                <div class="wrap">
+                                    <div class="controls">
+                                        <label for="spacing">Spacing:</label>
+                                        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+                                    
+                                        <label for="blur">Blur:</label>
+                                        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+                                    
+                                        <label for="base">Base Color</label>
+                                        <input id="base" type="color" name="base" value="#ffc600">
+                                      </div>
+                                      <img src="asset/image/about/dog.jpg"alt="dog">
+                                </div>
+                            </div>
+                            <div class="desc-txt">
+                                <h4>javascript 03</h4>
+                                <a href="#" class="arrow">
+                                    <span>control</span>
+                                </a>
+                                <p>이미지의 border 컬러, 선의 두깨 , 이미지의 블러 처리 등 버튼으로 조절하며 나타 낼 수 있는 자바스크립트를 제작 하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                        
+                     </ul>
+                    
+                </div>
+            </div>
+        </section>
+         <!-- javascript -->
+
+        <!-- react -->
+        <section id="section06">
+            <h2 class="ir_so">react API</h2>
+            <div class="container">
+            <div class="react">
+                <h3 class="letter-wrap" >react API</h3>
+               <ul class="project-item react-item">
+                        <li>
+                            <span class="line"></span>
+                            <div class="desc-img desc-img01">
+                                <span class="ir_so">Movie API</span>
+                                <!-- <img src="asset/image/project/project01.jpg" srcset="asset/image/project/project01@2x.jpg" alt="megabox"> -->
+                            </div>
+                            <div class="desc-txt">
+                                <h4> Movie API</h4>
+                                <a href="https://reactmovie-b535a.web.app/" class="arrow" target="blank">
+                                    <span >React API.</span>
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                        <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                        <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <p>
+                                    영화 API를 통해 인기있는 영화 리스트와 영화를 검색 할수 있도록 제작 하여 firebase 를 통해 어플 배포 하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="line"></span>
+                            <span class="desc-img desc-img02 ">
+                                <span class="ir_so">Youtube API</span>
+                                <!-- <img src="asset/image/project/project02.jpg" srcset="asset/image/project/project02@2x.jpg" alt="wesponsive site"> -->
+                            </span>
+                            <div class="desc-txt">
+                                <h4>Youtube API</h4>
+                                <a href="https://fir-3dac3.web.app/" class="arrow">
+                                    <span >React API.</span>
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4.73633" y1="18.9998" x2="17.9995" y2="18.9998" stroke="white" stroke-width="2"/>
+                                        <line x1="17" y1="19.9998" x2="17" y2="5.99976" stroke="white" stroke-width="2"/>
+                                        <line y1="-1" x2="23.377" y2="-1" transform="matrix(0.687745 0.725953 -0.687745 0.725953 0 1.99976)" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <p>
+                                    Youtube API를 통해 인디가요 리스트를 볼수 있고, 검색을 통해 인디가요를 찾을 수 있도록 firebase 를 통해 어플 배포 하였습니다.
+                                 </p>
+                            </div>
+                        </li>
+                      
+                    </ul>
+               </div>
+            </div>
+        </section>
+         <!-- react -->
+
+         <!-- contact -->
+         <section id="section07">
+             <h2 class="ir_pm">contact</h2>
+             <div class="portfolio">
+                <div id="canvas"></div>
+                <div id="content">
+                    <!-- drag slider -->
+                    <div id="planes">
+            
+                        <div class="plane-wrapper">
+                            <span class="plane-title">Ceative</span>
+                            <div class="plane">
+                                <img src="asset/image/slider/port_img01.jpg" srcset="asset/image/slider/port_img01@2x.jpg"data-sampler="planeTexture"alt="slider img1" crossorigin />
+                            </div>
+                        </div>
+                        
+                        <div class="plane-wrapper">
+                            <span class="plane-title">Funny</span>
+                            <div class="plane">
+                                <img src="asset/image/slider/port_img02.jpg" srcset="asset/image/slider/port_img02@2x.jpg"data-sampler="planeTexture"alt="slider img2" crossorigin />
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="plane-wrapper">
+                            <span class="plane-title">Happy</span>
+                            <div class="plane">
+                                <img src="asset/image/slider/port_img03.jpg" srcset="asset/image/slider/port_img03@2x.jpg"data-sampler="planeTexture"alt="slider img3" crossorigin />
+                               
+                            </div>
+                        </div>
+            
+                    </div>       
+                </div>
+                <script id="slider-planes-vs" type="x-shader/x-vertex">
+                    #ifdef GL_ES
+                    precision mediump float;
+                    #endif
+            
+                    // default mandatory attributes
+                    attribute vec3 aVertexPosition;
+                    attribute vec2 aTextureCoord;
+            
+                    // those projection and model view matrices are generated by the library
+                    // it will position and size our plane based on its HTML element CSS values
+                    uniform mat4 uMVMatrix;
+                    uniform mat4 uPMatrix;
+            
+                    // this is generated by the library based on the sampler name we provided
+                    // it will be used to map adjust our texture coords so the texture will fit the plane
+                    uniform mat4 planeTextureMatrix;
+            
+                    // texture coord varying that will be passed to our fragment shader
+                    varying vec2 vTextureCoord;
+            
+                    void main() {
+                        // apply our vertex position based on the projection and model view matrices
+                        gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+            
+                        // varying
+                        // use texture matrix and original texture coords to generate accurate texture coords
+                        vTextureCoord = (planeTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+                    }
+                </script>
+                <script id="slider-planes-fs" type="x-shader/x-fragment">
+                    #ifdef GL_ES
+                    precision mediump float;
+                    #endif
+            
+                    // our texture coords varying
+                    varying vec2 vTextureCoord;
+            
+                    // our texture sampler (see how its name matches the data-sampler attribute on our image tags)
+                    uniform sampler2D planeTexture;
+                    // our opacity uniform that goes from 0 to 1
+                    uniform float uOpacity;
+            
+                    void main( void ) {
+                        // map our texture to the varying texture coords
+                        vec4 finalColor = texture2D(planeTexture, vTextureCoord);
+            
+                        // the distance from this point to the top edge is a float from 0 to 1
+                        float distanceToTop = distance(vec2(vTextureCoord.x, 1.0), vTextureCoord);
+            
+                        // calculate an effect that goes from 0 to 1 depenging on uOpacity and distanceToTop
+                        float spreadFromTop = clamp((uOpacity * (1.0 - distanceToTop) - 1.0) + uOpacity * 2.0, 0.0, 1.0);
+            
+                        // handle pre-multiplied alpha on rgb values and use spreadFromTop as alpha.
+                        finalColor = vec4(vec3(finalColor.rgb * spreadFromTop), spreadFromTop);
+            
+                        // this is it
+                        gl_FragColor = finalColor;
+                    }
+                </script>
+                 
+                <script id="distortion-vs" type="x-shader/x-vertex">
+                    #ifdef GL_ES
+                    precision mediump float;
+                    #endif
+            
+                    // default mandatory attributes
+                    attribute vec3 aVertexPosition;
+                    attribute vec2 aTextureCoord;
+            
+                    // our displacement texture matrix uniform
+                    uniform mat4 displacementTextureMatrix;
+            
+                    // mouse position and direction uniforms
+                    uniform vec2 uMousePos;
+                    uniform float uDirection;
+            
+                    // custom varyings
+                    varying vec2 vTextureCoord;
+                    varying vec2 vDispTextureCoord;
+                    varying vec2 vMouseTexCoords;
+            
+                    void main() {
+                        gl_Position = vec4(aVertexPosition, 1.0);
+            
+                        // varyings
+                        vTextureCoord = aTextureCoord;
+                        vDispTextureCoord = (displacementTextureMatrix * vec4(aTextureCoord, 0.0, 1.0)).xy;
+            
+                        // we will handle our mouse coords here for better performance
+                        // get our texture coords for both directions
+                        vec2 mouseHorizontalTexCoords = (uMousePos + 1.0) / 2.0;
+                        mouseHorizontalTexCoords.y = 0.5;
+            
+                        vec2 mouseVerticalTexCoords = (uMousePos + 1.0) / 2.0;
+                        mouseVerticalTexCoords.x = 0.5;
+            
+                        // use the right value for the right direction
+                        vMouseTexCoords = mix(mouseHorizontalTexCoords, mouseVerticalTexCoords, uDirection);
+                    }
+                </script>
+                <script id="distortion-fs" type="x-shader/x-fragment">
+                    #ifdef GL_ES
+                    precision mediump float;
+                    #endif
+            
+                    // varyings
+                    varying vec2 vTextureCoord;
+                    varying vec2 vDispTextureCoord;
+                    varying vec2 vMouseTexCoords;
+            
+                    // our render texture is basically what's being drawn in our canvas
+                    uniform sampler2D uRenderTexture;
+                    // the displacement texture we've loaded into our shader pass
+                    uniform sampler2D displacementTexture;
+            
+                    // all our uniforms
+                    uniform float uDragEffect;
+                    uniform vec2 uMousePos;
+                    uniform vec2 uOffset;
+                    uniform float uDirection;
+                    uniform vec3 uBgColor;
+            
+                    void main( void ) {
+                        vec2 textureCoords = vTextureCoord;
+            
+                        // repeat and offset our displacement map texture coords for both slider directions
+                        vec2 horizontalPhase = fract(vec2(vDispTextureCoord.x + uOffset.x, vDispTextureCoord.y + (uOffset.y / 3600.0)) / vec2(1.0, 1.0));
+                        vec2 verticalPhase = fract(vec2(vDispTextureCoord.x * (uOffset.x / 3600.0), vDispTextureCoord.y + uOffset.y) / vec2(1.0, 1.0));
+            
+                        // use the correct repeated and offseted texture coords
+                        vec2 phase = mix(horizontalPhase, verticalPhase, uDirection);
+                        vec4 displacement = texture2D(displacementTexture, phase);
+            
+                        // use our varying mouse texture coords
+                        vec2 mouseTexCoords = vMouseTexCoords;
+            
+                        float distanceToMouse = distance(mouseTexCoords, textureCoords);
+            
+                        // calculate an effect that goes from 0 to 1 depenging on uDragEffect and distanceToMouse
+                        float spreadFromMouse = clamp((uDragEffect * (1.0 - distanceToMouse) - 1.0) + uDragEffect * 2.0, 0.0, 1.0);
+            
+                        // calculate our fish eye like distortions
+                        vec2 fishEye = (vec2(textureCoords - mouseTexCoords).xy) * pow(distanceToMouse, 3.0);
+            
+                        // add a displacement based on our map and our time uniform
+                        float displacementEffect = displacement.r * 1.25;
+            
+                        // spread our fish eye and displacement effects from our mouse
+                        // calculate for both directions
+                        vec2 horizontalTexCoords = textureCoords;
+                        horizontalTexCoords.x -= spreadFromMouse * fishEye.x * displacementEffect / 2.0;
+                        horizontalTexCoords.y += spreadFromMouse * fishEye.y * displacementEffect * 3.0;
+            
+                        vec2 verticalTexCoords = textureCoords;
+                        verticalTexCoords.x += spreadFromMouse * fishEye.x * displacementEffect * 3.0;
+                        verticalTexCoords.y -= spreadFromMouse * fishEye.y * displacementEffect / 2.0;
+            
+                        // use the right value for the right direction
+                        textureCoords = mix(horizontalTexCoords, verticalTexCoords, uDirection);
+            
+            
+                        // get our final colored and BW vec4
+                        vec4 finalColor = texture2D(uRenderTexture, textureCoords);
+                        float grey = dot(finalColor.rgb, vec3(0.299, 0.587, 0.114));
+                        vec4 finalGrey = vec4(vec3(grey), 1.0);
+            
+                        // mix our both vec4 based on our spread value
+                        finalColor = mix( finalGrey, finalColor, spreadFromMouse * finalColor.a);
+            
+                        float spreadFromMouseAdjusted = spreadFromMouse / sqrt(2.0);
+            
+                        // apply a grey background where we don't have nothing to draw
+                        finalColor = mix(vec4(uBgColor.r * spreadFromMouseAdjusted / 255.0, uBgColor.g * spreadFromMouseAdjusted / 255.0, uBgColor.b * spreadFromMouseAdjusted / 255.0, spreadFromMouseAdjusted), finalColor, finalColor.a);
+            
+                        gl_FragColor = finalColor;
+                    }
+                </script>
+                <!-- partial -->
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
+                <script src='https://www.curtainsjs.com/build/curtains.min.js'></script>
+            </div>
+             <div class="container">
+              
+                 <div class="contact">
+                     <span class="desc-img">
+                         <img src="asset/image/contact/contact_img.jpg" srcset="asset/image/contact/contact_img@2x.jpg"alt="contact">
+                     </span>
+                     <div  class="contact-contents desc-txt">
+                        <div class="form my-form">
+                            <form method="POST" action="https://formspree.io/f/mwkandpn">
+                                <h3>contact me</h3>
+                                <p class="field">
+                                    <label for="username">Name</label>
+                                    <input type="text" id="username" placeholder="Name" class="input-text">
+                                </p>
+                                <p class="field">
+                                    <label for="userEmail">E-mail/adress</label>
+                                    <input type="email" id="userEmail" placeholder="Email/adress">
+                                </p>
+                                <p class="field">
+                                    <label for="userPhone">phone</label>
+                                    <input type="phone" id="userEmail" placeholder="phone">
+                                </p>
+                                <p class="field">
+                                    <label for="userMsg"></label>
+                                    <textarea name="usermsg" id="userMsg" cols="20" rows="10" placeholder="text youre message here"></textarea>
+                                </p>
+                                <button class="submit" type="submit"  class="btn">
+                                   send message
+                                </button>        
+                            </form>
+                        </div>
+                     </div>  
+                  
+                 </div>
+                 
+             </div>
+         </section>
+    </main>
+
+    <!-- //content -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+    <script src="asset/js/drag2.js"></script>
+    <script src="asset/js/imagesloaded.pkgd.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/javascript.js"></script>
+   
+</body>
+</html>

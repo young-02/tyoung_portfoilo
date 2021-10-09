@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* font */
+/* @import url('http://fonts.cdnfonts.com/css/morganite'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Morganite-Bold';
+    src: url('../font/Morganite-Bold.woff2') format('woff2'),
+        url('../fontMorganite-Bold.woff') format('woff'),
+        url('../fontMorganite-Bold.ttf') format('truetype');
+    font-weight: bold;
+    /* font-style: italic; */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morganite-Black';
+    src: url('../font/Morganite-Black.woff2') format('woff2'),
+        url('../font/Morganite-Black.woff') format('woff'),
+        url('../font/Morganite-Black.ttf') format('truetype');
+    font-weight: 900;
+    /* font-style: italic; */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morganite-Light';
+    src: url('../font/Morganite-Light.woff2') format('woff2'),
+        url('../font/Morganite-Light.woff') format('woff'),
+        url('../font/Morganite-Light.ttf') format('truetype');
+    font-weight: 300;
+    /* font-style: italic; */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morganite-MediumItalic';
+    src: url('../font/Morganite-MediumItalic.woff2') format('woff2'),
+        url('../font/Morganite-MediumItalic.woff') format('woff'),
+        url('../font/Morganite-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    /* font-style: italic; */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morganite-Medium';
+    src: url('../font/Morganite-Medium.woff2') format('woff2'),
+        url('../font/Morganite-Medium.woff') format('woff'),
+        url('../font/Morganite-Medium.ttf') format('truetype');
+    font-weight: 500;
+    /* font-style: italic; */
+    font-display: swap;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0;
+     line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; 
+    z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {overflow: hidden; position:absolute; width:0; 
+    height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */

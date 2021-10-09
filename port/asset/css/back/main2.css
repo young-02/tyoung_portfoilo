@@ -1,0 +1,432 @@
+@import url(reset.css);
+@import url(font.css);
+
+:root{
+    --fontColor:#fff;
+    --fMBlack:'Morganite-Black';
+    --fMBold:'Morganite-Bold';
+    --fMMedium:'Morganite-Medium';
+    --fMLight:'Morganite-Light';
+    --fGMedium:'GmarketSansMedium';
+    --fGLight:'GmarketSansLight';
+}
+
+body{
+    font-size: 16px;
+    line-height: 1;
+    background-color: #000;
+    color:var(--fontColor);
+ 
+}
+
+
+/* scroll */
+.scroll{
+    position: fixed;
+    width: 110px;
+    height: 110px;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    bottom:5%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 110px;
+    box-shadow: -1px 0px 9px rgba(255,255,255, 0.2);
+    border-radius: 50%;
+    z-index: 2;
+}
+.scroll > p{
+  text-align: center;
+}
+.moving-circle {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    transform: rotate(-90deg);
+    animation: ani 10s linear infinite;
+    position: absolute;
+    top:0%;
+    left:0%;
+  }
+  .scroll.on {
+    left: 93%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+  .scroll.on svg{
+    width: 50px;
+    height: 50px;
+
+}
+.scroll.on .moving-circle {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    transform: rotate(-90deg);
+    animation: ani 10s linear infinite;
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+
+  @keyframes ani {
+  0% {
+    stroke-dashoffset: 500; 
+  }
+  50% {
+    stroke-dashoffset: 0;  
+  }
+  100% {
+    stroke-dashoffset: -500;
+  }
+}
+
+/* header */
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    width: 95%;
+    margin: auto;
+}
+.nav h1 a{
+    flex: 2;
+    font-size: 2vw;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+.nav ul li{
+    position: relative;
+}
+.nav ul li::before{
+    content:'';
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+    height: 0%;
+    width: 1px;
+    background: #fff;
+    transition: height 0.3s;
+    opacity: 0;
+}
+.nav ul li:hover::before{
+    opacity: 1;
+    height: calc(100% - 20px);
+}
+.nav ul li::after{
+    content:'';
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    height: 0%;
+    width: 1px;
+    background: #fff;
+    transition: height 0.4s;
+    opacity: 0;
+}
+.nav ul li:hover::after{
+    opacity: 1;
+    height: calc(100% - 20px);
+}
+.nav ul li a{
+    color: var(--fontColor);
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    display: inline-block;
+    padding:1em;
+    position: relative;
+    font-size: 18px;
+}
+.nav ul li a::before{
+    content:'';
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: width 0.4s;
+    opacity: 0;
+}
+.nav ul li a::after{
+    content:'';
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: width 0.5s;
+    opacity: 0;
+}
+.nav ul li a:hover::before{
+    width: calc(100% - 20px);
+    opacity: 1;
+}
+.nav ul li a:hover::after{
+    width: calc(100% - 20px);
+    opacity: 1;
+}
+
+.nav ul li.on {
+    position: relative;
+}
+
+.nav ul li.on::before{
+    content:'';
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+    height: calc(100% - 20px);
+    width: 1px;
+    background: #fff;
+    transition: height 0.3s;
+    opacity: 1;
+}
+
+.nav ul li.on::after{
+    content:'';
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    height: calc(100% - 20px);
+    width: 1px;
+    background: #fff;
+    transition: height 0.4s;
+    opacity: 1;
+}
+
+.nav ul li.on a{
+    color: var(--fontColor);
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    display: inline-block;
+    padding:1em;
+    position: relative;
+    font-size: 18px;
+}
+.nav ul li.on a::before{
+    content:'';
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background: #fff;
+    transition: width 0.4s;
+    opacity: 1;
+}
+.nav ul li.on a::after{
+    content:'';
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background: #fff;
+    transition: width 0.5s;
+    opacity: 1;
+}
+
+
+.nav .sitemap{
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+.nav .sitemap span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+}
+
+/* container */
+.container{
+    width: 95%;
+    margin:auto;
+}
+
+/* section */
+#section01, #section02{
+    width: 100%;
+    height: 100vh;
+    
+}
+/* port-main */
+
+#port-main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.port-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.port-main h3{
+    font-family:var(--fMBlack);
+    font-size: 16vw;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color:transparent;
+    letter-spacing: .12em;
+    z-index: 1;
+}
+.port-main h3 span {
+    opacity: 0; 
+    display: inline-block;
+}
+.port-main > span {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 6.3vw;
+    padding-left: 4.1vw;
+    display: inline-block;
+    vertical-align: center;
+    z-index: 1;
+}
+
+.port-main .main-visual{
+    width:803px;   
+    height: 503px;
+    background:url(../image/port_main/port_main.jpg)no-repeat center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* slide */
+#slide{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+/* about */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-img{
+    display: block;
+    width: 803px;
+    height: 536px;
+    background: url('../image/about/about@2x.jpg') no-repeat center ;
+    background-size: contain;
+    /* flex: 1; */
+}
+.about .about-decs {
+    flex: 0.7;
+    word-break: keep-all;
+    word-wrap: break-word;
+    /* white-space: nowrap; */
+    margin-left: -6em;
+}
+.about .about-decs h3 {
+    font-family: var(--fMLight);
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+.about .about-decs p{
+   font-family: var(--fGLight);
+  line-height: 1.5em;
+}
+.about .about-decs p + p{
+  margin-top: 1.25em;
+}
+
+
+.project .pro-txt .pro-cont > div .pro-txt .arrow{
+    display:block; 
+   margin: 7.5em 0 2.5em ;
+}
+.project .pro-txt .pro-cont > div .pro-txt .arrow span{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--fMMedium);
+    font-size: 5vw;
+    position: relative;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: width 0.3s ease-in-out;
+}
+.pro-cont .arrow span:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  height: 1px;
+  background: #fff;
+  opacity: 0;
+}
+.pro-cont .arrow span:hover:after{
+  opacity: 1;
+  width: 100%;
+}
+
+.project .pro-txt .pro-cont > div .pro-txt .arrow span{
+    position: relative;
+     display: inline-block;
+}
+.project .pro-txt .pro-cont > div .pro-txt .arrow span::after{
+    position: absolute;
+    left:0%;
+    width: 0%;
+    content: '';
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    opacity: 0;   
+    transition: width 0.4s ease-in;
+
+}
+.project .pro-txt .pro-cont > div .pro-txt .arrow:hover  span:after{
+    right: 100%;
+    width: 100%;
+    opacity: 1;
+   
+}
+.project .pro-txt .pro-cont > div .pro-txt .arrow svg{
+    transition: transform 0.4s ease-in;
+}
+.project .pro-txt .pro-cont > div .pro-txt .arrow:hover  svg{
+    transform: rotate(-90deg);
+}
+.project .pro-txt .pro-cont > div .pro-txt  p{
+    line-height: 1.5;
+    font-family: var(--fGLight);
+}

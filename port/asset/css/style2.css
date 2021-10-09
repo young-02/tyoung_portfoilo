@@ -1,0 +1,60 @@
+/* layout */
+#section1 {
+    height: 100vh;
+    position: relative;
+    z-index: 7000;
+    width: 100%;
+    background:blue;
+}
+#section2 {
+    height: 2000px;
+    background: green;
+    position: relative;
+    z-index: 5000;
+}
+#section3 {
+    height: 800vw;
+    background: yellowgreen;
+    position: relative;
+    z-index: 4000;
+}
+#section4 {
+    height: 5000px;
+    background: red;
+    position: relative;
+    z-index: 5000;
+}
+
+.scroll{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 11111111111;
+}
+/* sec3 */
+.sec3 {
+    position: fixed;
+    left: 0; top: 0;
+    width: 400vw;
+}
+.script-wrap {
+    overflow: hidden;
+    height: 100vh;
+    width: 400vw;
+}
+.script-wrap .script {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+}
+.script-wrap .script:nth-child(1){
+    background: #333;
+}
+.script-wrap .script:nth-child(2){
+    background: #555;
+}
+.script-wrap .script:nth-child(3){
+    background: #888;
+}
+.script-wrap .script:nth-child(4){
+    background: rgb(172, 80, 80);
+}
